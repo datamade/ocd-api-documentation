@@ -94,5 +94,7 @@ Votes
 
 The `votes endpoint <http://ocd.datamade.us/votes/>`_ contains information about every motion made on every piece of legislation within each jurisdiction tracked by the OCD API. The listing and detail pages within the votes endpoint also contain the name and id of the bill being voted on, and the organization conducting the vote. The detail page for each vote also lists the name and id of every voter and how they voted.
 
+Need more?
+~~~~~~~~~~
 
-
+More detailed information on the exact contents of listing and detail pages for endpoints can be found `here <http://docs.opencivicdata.org/en/latest/data/index.html>`_.
