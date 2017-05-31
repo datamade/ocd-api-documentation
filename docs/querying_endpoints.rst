@@ -1,7 +1,7 @@
 Querying Endpoints
 ==================
 
-Each of the endpoints can be individually filtered and searched to provide more specific results. While users can search the API using basic URL query strings, OCD also supports a handful of more advanced queries, including certain Django URL Filters. (https://github.com/miki725/django-url-filter)
+Each of the endpoints can be individually filtered and searched to provide more specific results. While users can search the API using basic URL query strings, OCD also supports a handful of more advanced queries, including certain `Django URL Filters <https://github.com/miki725/django-url-filter>`_.
 
 Query basics
 ~~~~~~~~~~~~
