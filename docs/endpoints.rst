@@ -19,26 +19,26 @@ The API contains eight different types of civic data. A unique endpoint represen
 
   * votes
 
-Independently filterable and searchable, the endpoints organize individual entries, each receiving a unique id. Displaying an entry reveals detailed information about a specified instance of civic data. 
+Independently filterable and searchable, the endpoints organize individual entries, each receiving a unique id, which points to detailed information about a specified instance of civic data. 
 
 Elements of an Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Each endpoint has two parts: (1) the **listing pages**, which contain general information on each entity, and (2) the **detail pages**, which contain all available data on a given entity. Some entries also contain the names and ids of related entities stored in different endpoints.
+An endpoint has two parts: (1) the **listing pages**, which contain general information on entities, and (2) the **detail pages**, which contain all available data on a given entity. Some entries also contain the names and ids of related entities stored in different endpoints.
 
-    i. **Listing Page.** To access the listing page for a given endpoint, enter the following URL:
+    i. **Listing Page.** To access the listing page for an endpoint, enter a URL with the following pattern:
 
       ::
 
-          ocd.datamade.us/{end_point_name}/
+          ocd.datamade.us/{end point name}/
 
-      The endpoint name should be one of the following categories listed above. Example:
+      The endpoint name should be one of the categories listed above. Example:
 
       :: 
 
           ocd.datamade.us/events
 
-    ii. **Detail Page.** The listing page displays a collection of entries, and each entry receives a unique id that makes possible the entity detail page. To access a detail page, enter the following URL: 
+    ii. **Detail Page.** The listing page displays a collection of entries, and each entry receives a unique id that makes possible the entity detail page. To access a detail page, enter a URL with the following pattern: 
 
       :: 
 
@@ -57,12 +57,12 @@ Endpoint Details
 Bills
 #####
 
-The `bills endpoint <http://ocd.datamade.us/bills/>`_ contains information on individual pieces of legislation, including its classification, identifier, title, and subject. Each entry also provides the name and id of the organization that proposed the bill, the name and id of the bill jurisdiction, and the unique id of the bill itself.
+The `bills endpoint <http://ocd.datamade.us/bills/>`_ contains information on individual pieces of legislation, including the classification, identifier, title, and subject of the bill. Each entry also provides the name and id of the organization that proposed the bill, the name and id of the bill jurisdiction, and the unique id of the bill itself.
 
 Boundaries
 ##########
 
-The `boundaries endpoint <http://ocd.datamade.us/boundaries/>`_ contains geographic information on many of the divisions tracked by the API, primarily Illinois congressional districts, wards, and precincts. Unlike the other endpoints, boundary entities do not receive an id, but rather a URL. Each entry on the boundaries listing page contains the URL for the specific boundary, the URL of the boundary set (the parent set of the specific boundary), and the name and id of the division the boundary describes. The boundary-specific detail page contains URLs for the simple shape of the boundary, centeroid, boundary set and shape, as well as coordinates on its bound box.
+The `boundaries endpoint <http://ocd.datamade.us/boundaries/>`_ contains geographic information on many of the divisions tracked by the API, such as the Illinois congressional districts, wards, and precincts. Unlike the other endpoints, boundary entities do not receive an id, but rather a URL. Each entry on the boundaries listing page contains the URL for the boundary, the URL of the boundary set (the parent set of the specific boundary), and the name and id of the division the boundary describes. The boundary-specific detail page contains URLs for the simple shape of the boundary, centeroid, boundary set and shape, as well as coordinates on its bound box.
 
 Divisions
 #########
@@ -94,7 +94,7 @@ Votes
 
 The `votes endpoint <http://ocd.datamade.us/votes/>`_ contains information about every motion made on every piece of legislation within each jurisdiction tracked by the OCD API. The listing and detail pages within the votes endpoint also contain the name and id of the bill being voted on, and the organization conducting the vote. The detail page for each vote also lists the name and id of every voter and how they voted.
 
-Need more?
-~~~~~~~~~~
+Further Reading
+~~~~~~~~~~~~~~~
 
 More detailed information on the exact contents of listing and detail pages for endpoints can be found `here <http://docs.opencivicdata.org/en/latest/data/index.html>`_.
