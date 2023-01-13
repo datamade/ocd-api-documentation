@@ -8,5 +8,4 @@ Open Civic Data API Documentation
 =================================
 
 The Open Civic Data API is no longer maintained. For information about writing
-structuring your data per the Open Civic Data standard, see
-https://opencivicdata-docs.readthedocs.io/en/latest/
+structuring your data per the Open Civic Data standard, see https://opencivicdata.info
